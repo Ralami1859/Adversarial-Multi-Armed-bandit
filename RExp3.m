@@ -1,3 +1,12 @@
+
+%% Inputs: 
+% environment: Matrix of size Horizon x NbrArms
+% batchSize: Number of time steps before restart
+% gamma: exploration rate (Default value = 0.05)
+%% Outputs:
+% gainREXP3: vector of observations for each time step
+
+
 function gainREXP3 = RExp3(environment, batchSize, gamma)
 
 [Horizon, NbrArms] = size(environment);

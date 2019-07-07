@@ -1,6 +1,11 @@
-function gainEXP3P = Exp3P(environment, gamma)
 
+%% Inputs: 
 % environment: Matrix of size Horizon x NbrArms
+% gamma: exploration rate (Default value = 0.05)
+%% Outputs:
+% gainEXP3P: vector of observations for each time step
+
+function gainEXP3P = Exp3P(environment, gamma)
 
 [Horizon, NbrArms] = size(environment);
 

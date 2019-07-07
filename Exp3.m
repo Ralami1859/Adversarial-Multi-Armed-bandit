@@ -1,6 +1,12 @@
+
+%% Inputs: 
+% environment: Matrix of size Horizon x NbrArms
+% gamma: exploration rate (Default value = 0.05)
+%% Outputs:
+% gainEXP3: vector of observations for each time step
+
 function gainEXP3 = Exp3(environment, gamma)
 
-% environment: Matrix of size Horizon x NbrArms
 
 [Horizon, NbrArms] = size(environment);
 
